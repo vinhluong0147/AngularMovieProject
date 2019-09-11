@@ -1,0 +1,40 @@
+.carousel-item-content .carousel-item img {
+    max-width: 100%;
+    max-height: 580px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-item-content .prev-span span {
+    background-image: url('https://www.123phim.vn/app/assets/img/icons/back-session.png');
+    left: 15px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.carousel-item-content .next-span span {
+    background-image: url('https://www.123phim.vn/app/assets/img/icons/next-session.png');
+    right: 15px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

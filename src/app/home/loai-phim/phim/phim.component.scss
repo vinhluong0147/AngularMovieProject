@@ -1,0 +1,24 @@
+.item-phim p {
+    font-size: 18px;
+    margin: 15px;
+}
+
+.item-phim button {
+    background-color: #fa5238;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    display: none;
+    margin-top: 10px;
+}
+
+.item-phim:hover button {
+    display: block;
+}
+
+.item-phim:hover p {
+    display: none;
+}

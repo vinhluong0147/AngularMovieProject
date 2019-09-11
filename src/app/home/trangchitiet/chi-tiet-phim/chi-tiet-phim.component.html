@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-12 mb-3">
+        <h3 class="d-inline mr-3"><a href="">Trang chủ</a></h3>
+        <h3 class="d-inline">| {{Phim.TenPhim}} </h3>
+    </div>
+
+</div>
+<div class="row mb-5">
+    <div class="col-4">
+        <img [src]="Phim.HinhAnh" width="300px" height="350px" alt="">
+    </div>
+    <div class="col-8 m-auto phim-infor">
+        <p><span>Ngày khởi chiếu  </span> {{Phim.NgayKhoiChieu | date:"dd/MM/yy"}}</p>
+        <span>Mô tả</span>
+        <p> {{Phim.MoTa}}</p>
+        <p><span>Đánh giá</span>{{Phim.DanhGia}}</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <p class="text-center">Lịch Chiếu</p>
+        <a class="btn btn-success mr-4 " *ngFor="let lichChieu of Phim.LichChieu" [routerLink]="['/trang-dat-ghe']" [queryParams]="{Id:lichChieu.MaLichChieu,MovieId:Phim.MaPhim}" (click)="ValidateLogIn()">{{lichChieu.NgayChieuGioChieu | date: 'dd/MM, hh:mm'}} </a>
+    </div>
+</div>
+
+
+<!-- <iframe width="724" height="407" [src]="Phim.Trailer | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->

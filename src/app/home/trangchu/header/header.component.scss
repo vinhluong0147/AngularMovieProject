@@ -1,0 +1,29 @@
+.navbar-nav>li>a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.navbar {
+    min-height: 80px !important;
+    background: #2d3246
+}
+
+.logo h1 {
+    color: blue;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.header-list li:hover a {
+    color: blue;
+}
+
+.header-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tab-content {
+    color: black;
+}

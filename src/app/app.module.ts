@@ -5,15 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { HomeModule } from './home/home.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     OwlModule,
-    HomeModule
+    HomeModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

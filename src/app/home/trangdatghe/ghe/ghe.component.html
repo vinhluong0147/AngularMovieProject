@@ -1,0 +1,32 @@
+<div class="row ghe_content">
+    <div class="col-8 ghe_content_left">
+        <div class="container">
+            <div class="row">
+                <div class="top_content  ">
+                    <img src="../../../../assets/img/screen.png" alt="">
+                </div>
+                <div class="mid_content">
+                    <app-ghe-item *ngFor="let ghe of DanhSachGhe" [itemGhe]="ghe" (emitStatus)="handleDatGhe($event,ghe)"></app-ghe-item>
+                </div>
+                <div class="bot_content row justify-content-between">
+                    <span><button class="btn " disabled></button><span>ghế trống</span></span>
+                    <span><button class="btn btn-success" disabled></button><span>đang chọn</span></span>
+                    <span><button class="btn btn-danger" disabled></button><span>đã chọn</span></span>
+                    <span><button class="btn btn-dark" disabled></button><span>không thể chọn</span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-4 ghe_content_right">
+        <h3 class="text-center">Gía: {{TinhTongTien()}}</h3>
+        <hr>
+        <p>Tên Phim: {{Phim.TenPhim}}</p>
+        <p>Ngày giờ chiếu: {{Phim.LichChieu.NgayChieuGioChieu | date: 'dd/MM, hh:mm'}} - {{Phim.LichChieu.Rap.TenRap}}</p>
+        <hr>
+        <p>ghế <span *ngFor="let ghe of DanhSachGheHienThi">số {{ghe}}</span></p>
+        <hr>
+
+        <button class="btn btn-danger btn-datve" (click)="DatVe()">Đặt vé</button>
+    </div>
+</div>

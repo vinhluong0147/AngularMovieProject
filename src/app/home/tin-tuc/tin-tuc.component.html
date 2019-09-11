@@ -1,14 +1,19 @@
+<hr class="mb-4 hr-footer">
 <div class="row mt-3">
-  <div class="col-12 text-center mb-3">
-    <a href="" class="mr-3">Khuyến mãi</a>
-    <a href="" class="mr-3">sự kiện</a>
-  </div>
+    <div class="col-12 text-center mb-3">
+        <div class="btn mr-2 btn-success" (click)="showDiv(1)" [ngClass]="{'btn-success':selectedIndex === 1}">Khuyến mãi</div>
+        <div class="btn mr-2 " (click)="showDiv(2)" [ngClass]="{'btn-success':selectedIndex === 2}">sự kiện</div>
+        <div class="btn " (click)="showDiv(3)" [ngClass]="{'btn-success':selectedIndex === 3}">review</div>
+    </div>
 </div>
 <div class="row">
-  <div class="col-12">
-    <app-khuyen-mai></app-khuyen-mai>
-  </div>
-  <div class="col-12">
-    <app-su-kien></app-su-kien>
-  </div>
+    <div class="col-12" *ngIf="selectedIndex === 1">
+        <app-khuyen-mai></app-khuyen-mai>
+    </div>
+    <div class="col-12" *ngIf="selectedIndex === 2">
+        <app-su-kien></app-su-kien>
+    </div>
+    <div class="col-12" *ngIf="selectedIndex === 3">
+        <app-review></app-review>
+    </div>
 </div>

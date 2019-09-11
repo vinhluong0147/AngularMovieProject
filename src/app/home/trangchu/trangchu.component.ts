@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
+declare var $: any
 
 @Component({
   selector: 'app-trangchu',
