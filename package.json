@@ -23,7 +23,7 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "gh-pages": "^2.1.1",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "ngx-bootstrap": "^4.0.1",
     "ngx-owl-carousel": "^2.0.7",
     "owl.carousel": "^2.3.4",
